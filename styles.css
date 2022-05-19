@@ -34,8 +34,10 @@ body {
 /* intentar acomodar la imagen */
 
 .img-form {
-  max-width: 60px;
+  max-width: 100px;
   position: absolute;
+  margin-top: -110px;
+  margin-left: 168px;
 }
 /* gral */
 .form-login {
