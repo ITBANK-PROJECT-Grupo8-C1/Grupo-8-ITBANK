@@ -1,124 +1,129 @@
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
+}
+/***************** ENCABEZADO *****************/
+header a {
+  text-decoration: none;
+  color: #004481;
 }
 
-header a{
-    text-decoration: none;
-    color: #004481
+header a:hover {
+  color: #0066b4;
 }
 
-header a:hover{
-    color:#0066b4;
+header {
+  height: auto;
+  color: #004481;
 }
 
-header{
-    height: auto;
-    color: #004481;
+header h1 {
+  display: inline;
+  width: 100%;
+  font-size: 5em;
+  text-align: center;
+}
+/***************** BODY *****************/
+body {
+  position: relative;
+  padding-bottom: 5.5em;
+  min-height: 100vh;
 }
 
-header h1{
-    display: inline;
-    width:100%;
-    font-size: 5em;
-    text-align: center;
-}
+/***************** FORMULARIO *****************/
+/* intentar acomodar la imagen */
 
-body{
-    position: relative;
-    padding-bottom: 5.5em;
-    min-height: 100vh;
+.img-form {
+  max-width: 60px;
+  position: absolute;
 }
-
-.color-boton{
-    color:#1873B9
-}
-
-footer{
-    padding:1em 0;
-    text-align: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left:0;
-    width: 100%;
-}
-/*  */
-.img-form{
-    max-width: 60px;
-    position: absolute;
-    
-}
-
+/* gral */
 .form-login {
-    width: 500px;
-    height: 310px;
-    background: #f4f8fb;
-    margin: auto;
-    margin-top: 150px;
-    border-radius: 30px;
-    padding: 20px 30px;
-    border: solid 1px #1873B9;
-    color: #004481;
-    position: relative;
-  }
-  .form-login h5 {
-    margin: 0;
-    text-align: center;
-    height: 40px;
-    font-size: 25px;
-  }
-  
-  .form-login h6 {
-    color: #ABB9D6;
-    text-align: center;
-    height: auto;
-    margin-bottom: 30px;
-    font-size: 15px;
-  }
+  width: 500px;
+  height: 310px;
+  background: #f4f8fb;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 30px;
+  padding: 20px 30px;
+  border: solid 1px #1873b9;
+  color: #004481;
+  position: relative;
+}
+/* titulo */
+.form-login h5 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  font-size: 25px;
+}
+/* subtitulo */
+.form-login h6 {
+  color: #abb9d6;
+  text-align: center;
+  height: auto;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+/* usuario y contraseña */
+.controls {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #1873b9;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all ease 1s;
+}
 
-  .controls {
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1px solid #1873B9;
-    margin-bottom: 15px;
-    padding: 11px 10px;
-    font-size: 14px;
-    font-weight: bold;
-    transition: all ease 1s;
-  }
-
-  .controls:hover{
-    transition: all ease 0.5s;
-    color:#1873B9;
-  }
-  
+.controls:hover {
+  transition: all ease 0.5s;
+  color: #1873b9;
+}
+/* ingresar */
 .buttons {
-    width: 150px;
-    height: 40px;
-    background: #004481;
-    border-radius: 5px;
-    color: white;
-    display:flow-root;
-    text-align: center;
-    margin: auto auto;
-  }
-.buttons:hover{
-    box-shadow: 5px 5px rgba(167,167,167,0.5);
-    cursor:pointer;
-    transition: all ease 0.5s;
+  width: 150px;
+  height: 40px;
+  background: #004481;
+  border-radius: 5px;
+  color: white;
+  display: flow-root;
+  text-align: center;
+  margin: auto auto;
+}
+.buttons:hover {
+  box-shadow: 5px 5px rgba(167, 167, 167, 0.5);
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+/* registrarme / olvide */
+.form-login a {
+  color: #1873b9;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* acomodado */
+.registrarme {
+  float: left;
+}
+.olvide {
+  float: right;
 }
 
-  .form-login a{
-    color: #1873B9;
-    text-decoration: none;
-    font-size: 14px;
-  }
-.registrarme{
-    float: left;
+/***************** PIE DE PAGINA *****************/
+
+.color-boton {
+  color: #1873b9;
 }
-.olvide{
-    float:right;
-    float:bottom;
+
+footer {
+  padding: 1em 0;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
