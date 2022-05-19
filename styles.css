@@ -3,10 +3,25 @@
     padding:0;
 }
 
+header a{
+    text-decoration: none;
+    color: #004481
+}
+
+header a:hover{
+    color:#0066b4;
+}
+
 header{
     height: auto;
-    background-color: #F4F8FB;
     color: #004481;
+}
+
+header h1{
+    display: inline;
+    width:100%;
+    font-size: 5em;
+    text-align: center;
 }
 
 body{
@@ -20,7 +35,6 @@ body{
 }
 
 footer{
-    background-color: #CDDBE8;
     padding:1em 0;
     text-align: center;
     align-items: center;
@@ -29,14 +43,16 @@ footer{
     left:0;
     width: 100%;
 }
-
-.img{
-    max-width: 40px;
+/*  */
+.img-form{
+    max-width: 60px;
+    position: absolute;
+    
 }
 
 .form-login {
     width: 500px;
-    height: 300px;
+    height: 310px;
     background: #f4f8fb;
     margin: auto;
     margin-top: 150px;
@@ -44,15 +60,23 @@ footer{
     padding: 20px 30px;
     border: solid 1px #1873B9;
     color: #004481;
+    position: relative;
   }
   .form-login h5 {
     margin: 0;
     text-align: center;
     height: 40px;
-    margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 25px;
   }
   
+  .form-login h6 {
+    color: #ABB9D6;
+    text-align: center;
+    height: auto;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+
   .controls {
     width: 100%;
     border: none;
@@ -62,19 +86,39 @@ footer{
     padding: 11px 10px;
     font-size: 14px;
     font-weight: bold;
+    transition: all ease 1s;
+  }
+
+  .controls:hover{
+    transition: all ease 0.5s;
+    color:#1873B9;
   }
   
-  .buttons {
+.buttons {
     width: 150px;
     height: 40px;
     background: #004481;
     border-radius: 5px;
     color: white;
-    margin-left: 130px;
-    margin-bottom: 16px;
+    display:flow-root;
+    text-align: center;
+    margin: auto auto;
   }
+.buttons:hover{
+    box-shadow: 5px 5px rgba(167,167,167,0.5);
+    cursor:pointer;
+    transition: all ease 0.5s;
+}
+
   .form-login a{
     color: #1873B9;
     text-decoration: none;
     font-size: 14px;
   }
+.registrarme{
+    float: left;
+}
+.olvide{
+    float:right;
+    float:bottom;
+}
