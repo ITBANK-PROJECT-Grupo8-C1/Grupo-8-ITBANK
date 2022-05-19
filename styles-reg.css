@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(224, 248, 251) ;
+}
+
+h1 {
+    font-size: 6cm;
+    font-family: verdana, arial;
+    background-color: #004481;
+}
+
+#row_letra{
+    color: rgb(127, 138, 139);
+}

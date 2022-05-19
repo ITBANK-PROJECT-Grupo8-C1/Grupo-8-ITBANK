@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles-reg.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav align="center">
+        <img src="images\logo-azul-grande.png" />
+      </nav>
+    </header>
+
+    <!--los br los use para separar el header del footer, se tienen que borrar dsp -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <footer align="center">
+      <div class="container">
+          
+        <!--row con los icons-->
+        <div class="row">
+          <div class="col-2"><!--vacia solo para dejar el espacio--></div>
+          <div class="col-2">
+            <img src="images\Icon-twitter.png" />
+          </div>
+          <div class="col-2">
+            <img src="images\Icon-instagram.png" />
+          </div>
+          <div class="col-2">
+            <img src="images\Icon-question.png" />
+          </div>
+          <div class="col-2">
+            <img src="images\Icon-home.png" />
+          </div>
+          <div class="col-2"><!--vacia solo para dejar el espacio--></div>
+        </div>
+        
+        <!--row con los nombres(?)-->
+        <div class="row" id="row_letra">
+          <div class="col-2"><!--vacia solo para dejar el espacio--></div>
+          <div class="col-2">Twitter</div>
+          <div class="col-2">Instagram</div>
+          <div class="col-2">Legales</div>
+          <div class="col-2">Institucional</div>
+          <div class="col-2"><!--vacia solo para dejar el espacio--></div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
