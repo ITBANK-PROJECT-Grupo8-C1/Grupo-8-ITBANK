@@ -33,3 +33,48 @@ footer{
 .img{
     max-width: 40px;
 }
+
+.form-login {
+    width: 500px;
+    height: 300px;
+    background: #f4f8fb;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 30px;
+    padding: 20px 30px;
+    border: solid 1px #1873B9;
+    color: #004481;
+  }
+  .form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #1873B9;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    width: 150px;
+    height: 40px;
+    background: #004481;
+    border-radius: 5px;
+    color: white;
+    margin-left: 130px;
+    margin-bottom: 16px;
+  }
+  .form-login a{
+    color: #1873B9;
+    text-decoration: none;
+    font-size: 14px;
+  }
