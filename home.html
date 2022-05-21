@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles-compilado.css">
-    <link rel="shortcut icon" href="./images/favicon.ico">
-    <title>ITBANK-Home</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+    </style>
+    <title>ITBANK</title>
 </head>
 
 <body>
@@ -16,17 +18,17 @@
         <div class="container">
             <nav class="nav">
                 <div class="nav-logo">
-                    <a href="index.html" title="logo"><img src="/images/logo-blanco-header.png" class="nav-logo__link" alt=""></a>
+                    <a href="index.html" title="logo"><img src="/images/logo-blanco-header.png" class="nav-logo"
+                            alt=""></a>
                 </div>
                 <div class="nav-menu">
-                    <p>Hola, Juan :)</p>
                     <ul class="nav-menu__item">
                         <li><a href="#" class="nav-menu__link">Préstamos</a></li>
                         <li><a href="#" class="nav-menu__link">Inversiones</a></li>
                         <li><a href="#" class="nav-menu__link">Tarjetas</a></li>
                         <li><a href="#" class="nav-menu__link">Transferencias</a></li>
                         <li><a href="#" class="nav-menu__link">Cuentas</a></li>
-                        <li><a href="#" class="nav-menu__link">Pago de servicios</a></li>
+                        <li><a href="#" class="nav-menu__link">Servicios</a></li>
                     </ul>
                 </div>
             </nav>
@@ -34,35 +36,99 @@
     </header>
     <!-- Main -->
     <main class="main">
-        <div class="hero">
-            <div class="hero-image">
-                    <!--ESTO ES RE PROVISORIO HAY QUE HACER CARDS -->
-                <img class="hero-image__main" src="/images/Grupo 2705.svg" alt="Images">
-                <img class="hero-image__main" src="/images/Grupo 2716.svg" alt="Images">
+        <p class="main-text">Hola, Juan</p>
+        <p class="sub-main-text">Estado de tu cuenta</p>
+        <section class="products">
+            <div class="container">
+                <div class="card-1">
+                    <div class="card-text">
+                        <h2 class="card-text__title">Tus cuentas</h2>
+                        <span class="card-text__subs"> 48999989</span>
+
+                        <span class="card-text__subs1"> $20.000,00</span>
+                        <br />
+                        <hr style="border-color: #DDE6EE;
+                        border-style: solid;
+            background-color: #DDE6EE;
+            border-width: 2px;">
+        
+        
+                        <span class="card-text__subs"> 48997777</span>
+
+                        <span class="card-text__subs1"> USD $158,00</span>
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-text">
+                        <img class="card-image" src="/images/visa-logo.svg" alt="Images" /> <span
+                            class="card-text__title">Terminada en 7744</span>
+                        <p class="card-text__subs">
+                            Cierra el 23/06/2022 | vence el 01/06/2022
+                        </p>
+                        <p class="card-text__subs">Últimos consumos</p>
+                        <p class="card-text__subs">$120.077,20</p>
+                        <p class="card-text__subs">USD $12,50</p>
+                    </div>
+                </div>
+                <div class="card card-3">
+                    <div class="card-text">
+                        <img class="card-image" src="/images/mastercard-logo.svg" alt="Images" />
+                        <span class="card-text__title">Terminada en 4057</span>
+                        <p class="card-text__subs">
+                            Cierra el 23/06/2022 | vence el 06/06/2022
+                        </p>
+                        <p class="card-text__subs">Últimos consumos</p>
+                        <p class="card-text__subs">$120.077,20</p>
+                        <p class="card-text__subs">USD $12,50</p>
+                    </div>
+                </div>
             </div>
-            <div class="hero-image">
-                <img class="hero-image__main" src="/images/Grupo 2714.svg" alt="Images">
+            <div class="card-4">
+                <div class="card-text4">
+                    <p>Tenes disponible un</p>
+                    <span class="span4">préstamo</span>
+                    <span>preaprobado</span>
+                </div>
+                <div>
+                    <input class="card-submit" type="submit" value="Conocé más">
+                </div>
             </div>
-        </div>
+        </section>
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-menu">
                 <p>Ayuda</p>
+                <hr style="border-color: #E5ECF3;
+                border-style: solid;
+    background-color: #E5ECF3;
+    border-width: 2px;">
+                <br>
+
                 <ul class="footer-menu__item">
                     <li><a href="#" class="footer-menu__link">Preguntas frecuentes</a></li>
                     <li><a href="#" class="footer-menu__link">Términos y condiciones</a></li>
             </div>
             <div class="footer-menu">
                 <p>Redes sociales</p>
+                <hr style="border-color: #E5ECF3;
+                border-style: solid;
+    background-color: #E5ECF3;
+    border-width: 2px;">
+                <br>
+
                 <ul class="footer-menu__item2">
-                    <li><a href="#" ><img src="/images/twitter.svg" class="footer-menu__icon" alt="Icono de twitter"></a></li>
-                    <li><a href="#" ><img src="/images/instagram.svg" class="footer-menu__icon" alt="Icono de Instagram"></a></li>
-                    <li><a href="#" ><img src="/images/institucional.svg" class="footer-menu__icon"alt="Icon página web institucional"></a></li>
+                    <li><a href="#"><img src="/images/twitter.svg" class="footer-menu__icon" alt="Icono de twitter"></a>
+                    </li>
+                    <li><a href="#"><img src="/images/instagram.svg" class="footer-menu__icon"
+                                alt="Icono de Instagram"></a></li>
+                    <li><a href="#"><img src="/images/institucional.svg" class="footer-menu__icon"
+                                alt="Icon página web institucional"></a></li>
 
             </div>
-            <div class="footer-copy">
-                <p>Itbank.com.ar</p>
+            <div>
+                <p class="footer-copy">Itbank.com.ar</p>
             </div>
         </div>
     </footer>
