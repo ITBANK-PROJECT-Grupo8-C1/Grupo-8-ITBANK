@@ -7,6 +7,7 @@
   font-family: 'Open Sans', sans-serif;;
 }
 
+
 .header .container {
   margin: 0 auto;
   width: 100%;
@@ -49,16 +50,20 @@
   color: #FFFFFF;
 }
 
+.main{
+  background-color: #F4F8FB;
+}
+
 .main .main-text{
   color:#004481;
   font-size: 2.5rem;
-  padding: 2rem 2rem 0rem 4rem;
+  padding: 2rem 2rem 0rem 6rem;
 }
 .main .sub-main-text{
   color:#004481;
   font-size: 2.5rem;
   font-weight: 600;
-  padding: 0rem 0rem 0rem 4rem;
+  padding: 0rem 0rem 0rem 6rem;
 }
 
 
@@ -73,8 +78,9 @@
   grid-gap: 2rem;
   justify-content: center;
   align-items: center;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem 6rem 2rem 6rem;
   width: auto;
+  
 }
 
 .main .products .card-1 {
@@ -84,18 +90,20 @@
   font-size: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  height: 250px;
+  height: 260px;
   width: auto;
+  
 }
 .main .products .card {
-  padding: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background: #000000;
   color: #ffffff;
   font-size: 1.2rem;
   line-height: 2rem;
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  height: 250px;
+  height: 260px;
   width: auto;
 }
 
@@ -110,11 +118,11 @@ padding-right: 1rem;
 }
 
 .main .products .card-text {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .main .products .card-1 .card-text__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: inherit;
   text-transform: uppercase;
@@ -126,19 +134,23 @@ padding-right: 1rem;
   color: #004481;
   margin-left: 4rem;
 }
+.main .products .card .card-text__subs {
+  padding-left: 2rem;
+}
 
 .main .products .card .card-text__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: inherit;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 1rem;
+  
 }
 
   .card-4 {
   padding: 3rem 0rem;
-  margin: 2rem 4rem 2rem 4rem;;
+  margin: 2rem 6rem 2rem 6rem;;
   background: #ffffff;
   color: #1873B9;
   font-size: 1.5rem;
