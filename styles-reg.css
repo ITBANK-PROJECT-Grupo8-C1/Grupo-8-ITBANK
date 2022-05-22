@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;;
+}
+
 body {
   background-color: #f4f8fb;
 }
@@ -8,7 +14,6 @@ body {
 
 h1 {
   font-size: 6cm;
-  font-family: verdana, arial;
   background-color: #004481;
 }
 
@@ -25,7 +30,7 @@ h1 {
 /* gral */
 .form-login {
   width: 500px;
-  height: 310px;
+  height: auto;
   background: white;
   margin: auto;
   margin-top: 25px;
@@ -73,17 +78,14 @@ h1 {
   width: 150px;
   height: 40px;
   background: #004481;
+  border: none;
   border-radius: 5px;
   color: white;
   display: flow-root;
   text-align: center;
   margin: auto auto;
 }
-.buttons:hover {
-  box-shadow: 5px 5px rgba(167, 167, 167, 0.5);
-  cursor: pointer;
-  transition: all ease 0.5s;
-}
+
 /* registrarme / olvide */
 .form-login a {
   color: #1873b9;
@@ -114,4 +116,19 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  header .logo-header{
+    max-width: 20rem;
+    margin:  3rem 0rem 0rem 5rem;
+    padding-bottom: 8rem;
+    position: relative;
+  }
+
+  .form-login {
+    margin: 0 auto;
+    float: left;
+  }
 }

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;;
 }
 /***************** ENCABEZADO *****************/
 header a {
@@ -44,7 +45,7 @@ body {
 /* gral */
 .form-login {
   width: 500px;
-  height: 310px;
+  height: auto;
   background: white;
   margin: auto;
   margin-top: 120px;
@@ -61,6 +62,7 @@ body {
   text-align: center;
   height: 40px;
   font-size: 25px;
+  font-weight: 600;
 }
 /* subtitulo */
 .form-login h6 {
@@ -70,6 +72,8 @@ body {
   margin-bottom: 30px;
   font-size: 15px;
 }
+
+
 /* usuario y contraseña */
 .controls {
   width: 100%;
@@ -92,17 +96,14 @@ body {
   width: 150px;
   height: 40px;
   background: #004481;
+  border: none;
   border-radius: 5px;
   color: white;
   display: flow-root;
   text-align: center;
   margin: auto auto;
 }
-.buttons:hover {
-  box-shadow: 5px 5px rgba(167, 167, 167, 0.5);
-  cursor: pointer;
-  transition: all ease 0.5s;
-}
+
 /* registrarme / olvide */
 .form-login a {
   color: #1873b9;
@@ -110,11 +111,12 @@ body {
   font-size: 14px;
 }
 /* acomodado */
-.registrarme {
-  float: left;
-}
-.olvide {
-  float: right;
+
+.subtext{
+  text-align: center;
+  margin: 0 auto;
+  line-height: 20px;
+  color: #004481;
 }
 
 /***************** PIE DE PAGINA *****************/
@@ -131,4 +133,20 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  header .logo-header{
+    max-width: 20rem;
+    margin:  3rem 0rem 0rem 5rem;
+    padding-bottom: 8rem;
+    position: relative;
+  }
+
+  .form-login {
+    margin: 0 auto;
+    float: left;
+  }
+
 }

@@ -26,7 +26,7 @@
 
 .header .nav-logo {
  margin: 0 0rem 0rem 2rem;
- max-width: 70%;
+ max-width: 150px;
 }
 
 .header .nav-menu{
@@ -242,47 +242,133 @@ padding-right: 1rem;
 }
 
   
-/* RESPONSIVE CON MEDIA QUERY 
+
 @media only screen and (max-width: 600px) {
   .header .nav {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
   }
+  .header .nav-logo {
+    margin: 0 auto;
+    max-width: 200px;
+    padding-bottom: 0;
+   }
 
-  .header .hero {
+   .header .nav-menu{
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  .header .nav-menu__link {
+    margin: 0 0.7rem 0 0;
+    font-family: inherit;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+
+  .main .products .container{
     grid-template-columns: 1fr;
     justify-content: center;
-    margin-top: 5rem;
+    order: 2;
   }
 
-  .header .hero-text {
-    order: 2;
-    font-size: 1.2rem;
+  .main .main-text{
+    font-size: 2rem;
+    padding-left: 2rem;
   }
+
+  .main .sub-main-text{
+    font-size: 1.5rem;
+    padding-left: 2rem;
+  }
+
+
+  .main .products .card-1 {
+    padding: 2rem;
+    font-size: 1rem;
+    height: 280px;
+    width: 320px
+}
+
+.main .products .card-1 .card-text__subs1 {
+  display: table-cell; 
+}
+
+.main .products .card .card-text__title {
+  font-size: 1rem;
+}
+
+.main .products .card .card-text__subs {
+  font-size: 1rem;
+
+}
+
+.card-4 {
+  padding: 2rem;
+  height: auto;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.card-4 .card-text4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-left: 0;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.card-4 .card-submit{
+  border-radius: 5x;
+  font-size: 1.2rem;
+  padding: 12px 50px;
+  margin: 0 auto;
+} 
 
   .footer .container {
     flex-direction: column;
-    justify-content: center;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
-  .footer-menu__item {
+  .footer .footer-menu{
+    margin: 0 auto;
+    padding-left: 0rem;
+
+  }
+  
+  .footer .footer-menu p{
+    padding-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .footer-menu__item2{
     display: flex;
     flex-direction: row;
     flex: 1;
     flex-basis: auto;
-    margin-bottom: 2rem;
   }
-
+  
   .footer-menu__link {
-    margin: 0 1rem 0 1rem;
+    padding: 0.5rem 2rem 0 0;
     font-family: inherit;
     font-size: 1rem;
-    color: #ffffff;
   }
+  
+  .footer-menu__icon {
+    margin: 0 auto;
+    padding: 0.5rem 2rem 0 0;
+    height: 3.5rem;
+  }
+
 }
- */
+ 
 
 
