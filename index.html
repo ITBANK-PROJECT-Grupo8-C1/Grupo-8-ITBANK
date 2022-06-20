@@ -18,16 +18,13 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container-fluid">
+        <div>
             <nav class="nav">
                 <!-- clases necesarias. Y agregar navbar-collapse -->
                 <!-- navbar navbar-expand-lg bg-primary -->
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
                 <div class="nav-logo">
                     <a href="index.html" title="logo"><img src="./images/logo-blanco-header.svg" class="nav-logo"
-                            alt=""></a>
+                        alt=""></a>
                 </div>
                 <div class="nav-menu">
                     <ul class="nav-menu__item">
@@ -40,6 +37,9 @@
                         <li><a href="login.html" class="nav-menu__link">Cerrar Sesión</a></li>
                     </ul>
                 </div>
+                <button class="navbar-toggler collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </nav>
         </div>
     </header>
@@ -89,24 +89,31 @@
                     </div>
                 </div>
             </div>
+            <p class="sub-main-text">Cotización dolar hoy</p>
             <div class = "card-4 table-responsive">
-                <table class="table table-striped table-hover">
+                <table class="table table-hover" style="font-size: 1.2rem;">
                     <thead class = "table-primary">
                         <tr>
                             <th scope="col">Nombre</th>
                             <th scope="col">Compra</th>
                             <th scope="col">Venta</th>
                             <th scope="col">Variación</th>
-                            <th scope="col">Actualización</th>
+                            <th scope="col">Fecha</th>
                         </tr>
                     </thead>
-                    <tbody class = "cotizacion">
-                        <!-- aca se agregan cosas -->
+                    <tbody class="cotizacion">
+                        <tr>
+                            <td id="nombre"></td>
+                            <td id="compra"></td>
+                            <td id="venta"></td>
+                            <td id="variacion"></td>
+                            <td id="fecha"></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
             <div class="card-4">
-                <div class="card-text4">
+                <div class="card-text4" style="font-size: 2rem;">
                     <p>Tenes disponible un</p>
                     <span class="span4">préstamo</span>
                     <span>preaprobado</span>
