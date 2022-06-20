@@ -38,19 +38,27 @@ function variacion(varia) {
     } else {
         return varia+"%";
     }
-}
-function fecha_Actu(){
-    const date = new Date();
-    const dia = date.getDate();
-    const mes = date.getMonth();
-    const año = date.getFullYear();
+  }
 
-    return dia+"/"+mes+"/"+año;
+function variacion(varia) {
+  if (varia == undefined) {
+    return "-";
+  } else {
+    return varia + "%";
+  }
+}
+function fecha_Actu() {
+  const date = new Date();
+  const dia = date.getDate();
+  const mes = date.getMonth();
+  const año = date.getFullYear();
+
+  return dia + "/" + mes + "/" + año;
 }
 function verificacion(elemento) {
-    if(elemento === "No Cotiza") {
-        return elemento;
-    } else {
-        return "$"+elemento;
-    }
+  if (elemento === "No Cotiza") {
+    return elemento;
+  } else {
+    return "$" + elemento;
+  }
 }
