@@ -5,42 +5,37 @@ fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
     .then(res => res.json())
     .then(data => {
         for (const ele of data) {
-            // console.log(ele.casa.nombre) //primer logro.
-            if (ele.casa.nombre !== 'Argentina' && ele.casa.nombre !== 'Dolar Soja' && ele.casa.nombre !== 'Dolar') {
-                // console.log(ele.casa.nombre);
-                if(ele.casa.variacion.includes("-")){
-                    coti.innerHTML += 
-                        `<tr class = "table-danger">
-                        <td>${ele.casa.nombre}</td>
-                        <td>$${ele.casa.compra}</td>
-                        <td>$${ele.casa.venta}</td>
-                        <td>${variacion(ele.casa.variacion)}</td>
-                        <td>${fecha_Actu()}</td>
-                        </tr>`;
-                }
-                else{
-                        coti.innerHTML += 
-                        `<tr class = "table-success">
-                        <td>${ele.casa.nombre}</td>
-                        <td>${verificacion(ele.casa.compra)}</td>
-                        <td>${verificacion(ele.casa.venta)}</td>
-                        <td>${variacion(ele.casa.variacion)}</td>
-                        <td>${fecha_Actu()}</td>
-                        </tr>`;
-                    }
-            }
+            imprimir(ele.casa.nombre, ele.casa.compra, ele.casa.venta, ele.casa.variacion);
         }
     });
 
-function variacion(varia) {
-    if (varia == undefined) {
-        return '-';
-    } else {
-        return varia+"%";
+function imprimir(nombre, compra, venta, variacion){
+  if (nombre !== 'Argentina' && nombre !== 'Dolar Soja' && nombre !== 'Dolar') {
+    // console.log(ele.casa.nombre);
+    if(variacion.includes("-")){
+        coti.innerHTML += 
+            `<tr class = "table-danger">
+            <td>${nombre}</td>
+            <td>${verificacion(compra)}</td>
+            <td>${verificacion(venta)}</td>
+            <td>${VerVariacion(variacion)}</td>
+            <td>${fecha_Actu()}</td>
+            </tr>`;
     }
-  }
+    else{
+            coti.innerHTML += 
+            `<tr class = "table-success">
+            <td>${nombre}</td>
+            <td>${verificacion(compra)}</td>
+            <td>${verificacion(venta)}</td>
+            <td>${VerVariacion(variacion)}</td>
+            <td>${fecha_Actu()}</td>
+            </tr>`;
+        }
+}
+}
 
-function variacion(varia) {
+function VerVariacion(varia) {
   if (varia == undefined) {
     return "-";
   } else {
@@ -55,10 +50,10 @@ function fecha_Actu() {
 
   return dia + "/" + mes + "/" + año;
 }
-function verificacion(elemento) {
-  if (elemento === "No Cotiza") {
-    return elemento;
+function verificacion(precio) {
+  if (precio === "No Cotiza") {
+    return precio;
   } else {
-    return "$" + elemento;
+    return "$" + precio;
   }
 }
