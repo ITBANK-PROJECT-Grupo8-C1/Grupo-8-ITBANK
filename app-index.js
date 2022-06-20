@@ -1,6 +1,5 @@
 const coti = document.querySelector(".cotizacion");
 
-
 fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
     .then(res => res.json())
     .then(data => {
@@ -55,5 +54,6 @@ function verificacion(precio) {
     return precio;
   } else {
     return "$" + precio;
+
   }
 }
